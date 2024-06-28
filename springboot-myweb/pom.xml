@@ -14,7 +14,7 @@
 	<groupId>com.poscodx</groupId>
 	<artifactId>springboot-myweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +23,12 @@
 	</properties>
 
 	<dependencies>
+		<!-- Spring Boot Dev Tools: Live Reload -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		
 		<!-- Spring Boot web Starter -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,11 +48,10 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!-- jstl -->
+		<!-- JSTL -->
 		<dependency>
-			<groupId>jstl</groupId>
+			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>
 		</dependency>
 		
 		<!-- tomcat jasper -->
